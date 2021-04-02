@@ -1,0 +1,8 @@
+.listPage__box {
+    min-width: 100%;
+}
+
+.beerList__box {
+    max-width: 80%;
+    margin: auto;
+}

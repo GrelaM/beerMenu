@@ -1,0 +1,8 @@
+.header {
+    margin: 0 0 10px 0;
+    min-height: calc(30px + 4vw);
+    line-height: calc(30px + 4vw);
+    max-width: 100vw;
+    font-size: calc(10px + 2vw);
+    background-color: #00433A;
+  }
