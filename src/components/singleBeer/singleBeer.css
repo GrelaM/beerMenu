@@ -3,9 +3,9 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 8px;
+    padding: 8px 0;
     margin: 8px 0;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .singleBeer__imgBox {
@@ -34,20 +34,21 @@
 
 .singleBeer__main-text {
     font-weight: normal;
-    font-size: calc(8px + 0.4vw);
+    font-size: calc(8px + 0.6vw);
     text-transform: none;
 }
 
 @media only screen and (max-width: 500px) {
     .singleBeer__box {
         flex-direction: column;
+        max-width: 100%;
     }
 }
 
 @media only screen and (min-width: 992px) {
     .singleBeer__box {
         padding: 4px;
-        max-width: 80%;
+        max-width: 90%;
         margin: 10px auto;
     }
     .singleBeer__imgSize {

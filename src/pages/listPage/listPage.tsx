@@ -14,17 +14,16 @@ function ListPage() {
   const [page] = useState(1)
   const [isLoading, setIsLoading] = useState(true)
 
-  let pageParam: { page: string} = useParams();
+  let pageParam: { page: string } = useParams()
 
   useEffect(() => {
-    (async () => {
+    ;(async () => {
       const pageNum = Number(pageParam.page)
       setIsLoading(true)
 
-      const dataTest = await fetchData(pageNum)
-      setState(dataTest)
+      const data = await fetchData(pageNum)
+      setState(data)
       setIsLoading(false)
-      
     })()
   }, [page, pageParam.page])
 
@@ -54,13 +53,14 @@ function ListPage() {
   return (
     <div className="listPage__box">
       <Header headerText={'Beer Menu'} />
-      {isLoading ? <Spinner /> : 
-      <div>
+      {isLoading ? (
+        <Spinner />
+      ) : (
         <div className="beerList__box">
           {beerList}
+          <Pagination lastPage={state.length < 20 ? true : false} />
         </div>
-        <Pagination lastPage={state.length < 20 ? true : false}/>
-      </div>}
+      )}
     </div>
   )
 }

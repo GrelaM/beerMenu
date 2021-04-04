@@ -1,4 +1,5 @@
 import { Card, Col } from 'antd'
+import { Link } from 'react-router-dom'
 
 import './singleBeer.css'
 import Button from '../../components/button/button'
@@ -19,7 +20,9 @@ const SingleBeer: React.FC<SingleBeerProps> = (props) => {
       <Col span={8}>
         <Card title={props.name} bordered={false} className="singleBeer__card">
           <div className="singleBeer__main-text">{props.description}</div>
-          <Button onClick={() => console.log(props.id)} name={"View More"}/>
+          <Link to={`/beer/${props.id}`}>
+            <Button name={"View More"}/>
+          </Link>
         </Card>
       </Col>
     </div>

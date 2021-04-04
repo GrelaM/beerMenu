@@ -13,19 +13,9 @@
   letter-spacing: 4px;
 }
 
-.App__header {
-  margin: 0 0 10px 0;
-  min-height: 8vw;
-  line-height: 8vw;
-  min-width: 100%;
-  font-size: calc(10px + 2vw);
-  background-color: #00433A;
-}
-
 @media only screen and (min-width: 992px) {
   .App {
-    max-width: 80vw;
+    width: 80vw;
   }
 }
-
 

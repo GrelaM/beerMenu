@@ -1,0 +1,40 @@
+.descriptionPage__displayBox {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    align-items: center;
+}
+
+.descriptionPage__pic {
+    max-width: 100px;
+    max-height: 280px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px 100px;
+    margin: 20px 0;
+}
+
+.descriptionPage__header {
+    font-size: calc(12px + 1.5vw);
+}
+
+.descriptionPage__description {
+    width: 90%;
+    font-size: calc(12px + 0.6vw);
+    text-transform: none;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px solid white;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.descriptionPage__footer {
+    font-weight: 100;
+    font-size: calc(12px + 0.6vw);
+}
+
+@media only screen and (max-width: 500px) {
+    .descriptionPage__pic {
+        max-width: 50vw;
+        max-height: 30vh;
+        padding: 0;
+    }
+}
