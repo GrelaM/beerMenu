@@ -57,19 +57,21 @@ const SinglePage = (props: {
   }, [beerId.id])
 
   return (
-    <div className="singlePage__box">
-      <Header headerText={'You have chosen:'} />
+    <div>
       {isLoading ? (
         <Spinner />
       ) : (
-        <Description
-          url={state.url}
-          header={state.header}
-          description={state.description}
-          tips={state.tips}
-          contributor={state.contributor}
-          history={props.history}
-        />
+        <div className="singlePage__box">
+          <Header headerText={'You have chosen:'} />
+          <Description
+            url={state.url}
+            header={state.header}
+            description={state.description}
+            tips={state.tips}
+            contributor={state.contributor}
+            history={props.history}
+          />
+        </div>
       )}
     </div>
   )

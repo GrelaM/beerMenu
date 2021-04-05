@@ -51,14 +51,16 @@ function ListPage() {
   }
 
   return (
-    <div className="listPage__box">
-      <Header headerText={'Beer Menu'} />
+    <div>
       {isLoading ? (
         <Spinner />
       ) : (
-        <div className="beerList__box">
-          {beerList}
-          <Pagination lastPage={state.length < 20 ? true : false} />
+        <div className="listPage__box">
+          <Header headerText={'Beer Menu'} />
+          <div className="beerList__box">
+            {beerList}
+            <Pagination lastPage={state.length < 20 ? true : false} />
+          </div>
         </div>
       )}
     </div>
