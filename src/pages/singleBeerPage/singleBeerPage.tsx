@@ -25,7 +25,11 @@ const initialState = {
   contributor: ''
 }
 
-const SinglePage = (props: any) => {
+const SinglePage = (props: {
+  history: {
+    goBack: VoidFunction
+  }
+}) => {
   const [state, setState] = useState<State>(initialState)
   const [isLoading, setIsLoading] = useState(false)
 

@@ -8,7 +8,9 @@ interface State {
   description: string
   tips: string
   contributor: string
-  history: any
+  history: {
+    goBack: VoidFunction
+  }
 }
 
 const Description = (props: State) => {
