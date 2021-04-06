@@ -17,7 +17,7 @@ const SingleBeer: React.FC<SingleBeerProps> = (props) => {
       <div className="singleBeer__imgBox">
         <img alt="beer" className="singleBeer__imgSize" src={props.url} />
       </div>
-      <Col span={8}>
+      <Col span={18}>
         <Card title={props.name} bordered={false} className="singleBeer__card">
           <div className="singleBeer__main-text">{props.description}</div>
           <Link to={`/beer/${props.id}`}>

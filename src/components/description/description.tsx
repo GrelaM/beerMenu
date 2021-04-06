@@ -14,8 +14,9 @@ interface State {
 }
 
 const Description = (props: State) => {
+  console.log(props.url)
   return (
-    <div>
+    <div className="descriptionPage__displayBox">
       {
         (props.url && props.header && props.description,
         props.tips,
@@ -28,7 +29,7 @@ const Description = (props: State) => {
             />
             <h1 className="descriptionPage__header">{props.header}</h1>
             <p className="descriptionPage__description">{props.description}</p>
-            <h1 className="descriptionPage__header">brewers tips</h1>
+            <h1 className="descriptionPage__header">Brewers Tips</h1>
             <p className="descriptionPage__description">{props.tips}</p>
             <h6 className="descriptionPage__footer">
               Contributed by: <b>{props.contributor}</b>

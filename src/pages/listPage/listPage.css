@@ -1,14 +1,3 @@
 .listPage__box {
-    width: inherit;
-}
-
-.beerList__box {
-    width: 85%;
-    margin: auto;
-}
-
-@media only screen and (max-width: 500px) {
-    .beerList__box {
-        width: 100%;
-    }
+	max-width: 100vw;
 }

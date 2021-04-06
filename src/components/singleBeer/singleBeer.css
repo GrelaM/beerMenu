@@ -1,72 +1,82 @@
 .singleBeer__box {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 8px 0;
-    margin: 8px 0;
-    background-color: rgba(0,0,0,0.7);
+	max-width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 4px;
+	margin: 10px auto;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .singleBeer__imgBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    height: 18vh;
-    min-width: 10vw;
-    padding: 0 4px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	height: 18vh;
+	min-width: 10vw;
+	padding: 0 4px;
 }
 
 .singleBeer__imgSize {
-    margin: 1px;
-    max-height: 18vh;
-    max-width: 12vw;
+	margin: 1px;
+	max-height: 18vh;
+	max-width: 12vw;
 }
 
 .singleBeer__card {
-    font-weight: bold;
-    font-size: calc(12px + 0.6vw);
-    text-align: left;
-    text-transform: uppercase;
+	font-weight: bold;
+	font-size: calc(12px + 0.6vw);
+	text-align: left;
+	text-transform: uppercase;
 }
 
 .singleBeer__main-text {
-    font-weight: normal;
-    font-size: calc(8px + 0.6vw);
-    text-transform: none;
+	font-weight: normal;
+	font-size: calc(8px + 0.6vw);
+	text-transform: none;
 }
 
 @media only screen and (max-width: 500px) {
-    .singleBeer__box {
-        flex-direction: column;
-        max-width: 100%;
-    }
+	.singleBeer__box {
+		flex-direction: column;
+		max-width: 100vw;
+		padding: 4px 0;
+		margin: 8px 0;
+	}
 }
 
 @media only screen and (min-width: 992px) {
-    .singleBeer__box {
-        padding: 4px;
-        max-width: 90%;
-        margin: 10px auto;
-    }
-    .singleBeer__imgSize {
-        margin: 32px 48px;
-        max-height: 16vh;
-        max-width: 10vw;
-    }
+	.singleBeer__imgSize {
+		margin: 32px 48px;
+		max-height: 16vh;
+		max-width: 10vw;
+	}
 }
 
 @media only screen and (min-width: 1600px) {
-    .singleBeer__imgBox {
-        height: 18vh;
-        min-width: 8vw;
-        margin: auto 0;
-    }
-    .singleBeer__imgSize {
-        margin: 32px 48px;
-        max-height: 12vh;
-        max-width: 8vw;
-    }
+	.singleBeer__box {
+		justify-content: space-around;
+		max-width: 95%;
+		padding: 4px;
+	}
+	.singleBeer__imgBox {
+		height: 12vh;
+		width: 8vw;
+		margin: auto 0;
+	}
+	.singleBeer__imgSize {
+		margin: auto;
+		max-height: 12vh;
+		max-width: 8vw;
+	}
+	.singleBeer__card {
+		font-size: calc(10px + 0.6vw);
+	}
+	
+	.singleBeer__main-text {
+		font-size: calc(10px + 0.6vw);
+	}
 }

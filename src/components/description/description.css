@@ -1,16 +1,15 @@
 .descriptionPage__displayBox {
     display: flex;
     flex-direction: column;
-    justify-self: flex-start;
+    justify-content: space-around;
     align-items: center;
 }
 
 .descriptionPage__pic {
-    max-width: 100px;
-    max-height: 280px;
-    background-color: rgba(0,0,0,0.6);
-    padding: 20px 100px;
-    margin: 20px 0;
+    max-height: 300px;
+    background-color: rgba(0,0,0,0.1);
+    padding: 15px;
+    margin: 25px;
 }
 
 .descriptionPage__header {

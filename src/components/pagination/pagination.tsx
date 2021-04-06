@@ -28,7 +28,7 @@ const Pagination: React.FC<PaginationProps> = props => {
           <Button name={'Prev'} />
         </Link>
       ) : null}
-      <h2>{pageParam.page}</h2>
+      <h2 className="pagination__pageNum">{pageParam.page}</h2>
       {props.lastPage ? null : 
       <Link to={`/list/page/${nextPage('next')}`}>
         <Button name={'Next'} />

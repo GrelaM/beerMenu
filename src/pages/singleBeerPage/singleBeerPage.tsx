@@ -57,7 +57,7 @@ const SinglePage = (props: {
   }, [beerId.id])
 
   return (
-    <div>
+    <div className="singlePage__box">
       {isLoading ? (
         <Spinner />
       ) : (
